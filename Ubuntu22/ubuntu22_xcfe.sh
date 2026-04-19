@@ -212,6 +212,9 @@ command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 
 command+=" node --version"
+command+=" nvm install 20"
+command+=" nvm use 20"
+command+=" node --version"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
@@ -275,7 +278,5 @@ fi
 rm -rf /root/xfce22.sh
 rm -rf ~/.bash_profile" > $folder/root/.bash_profile 
 
-nvm install 20
-nvm use 20
 
 bash $bin
