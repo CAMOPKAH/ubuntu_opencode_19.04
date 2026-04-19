@@ -212,11 +212,7 @@ command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 
 command+=" node --version"
-command+=" wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash"
 
-command+=" nvm install 20"
-command+=" nvm use 20"
-command+=" node --version"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
