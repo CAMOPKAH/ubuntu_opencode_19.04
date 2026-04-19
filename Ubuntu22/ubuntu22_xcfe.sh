@@ -272,6 +272,14 @@ fi
 if [ ! -f /usr/bin/vncserver ]; then
     apt install tigervnc-standalone-server -y
 fi
+# --- Install Node.js 20 ---
+echo 'Adding NodeSource repository for Node.js 20...'
+apt install -y curl
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+apt install -y nodejs
+# --- End of Node.js installation --
+
+
 rm -rf /root/xfce22.sh
 rm -rf ~/.bash_profile" > $folder/root/.bash_profile 
 
