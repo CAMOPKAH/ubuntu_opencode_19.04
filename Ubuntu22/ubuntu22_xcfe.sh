@@ -277,6 +277,12 @@ echo 'Adding NodeSource repository for Node.js 20...'
 apt install -y curl
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 apt install -y nodejs
+curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh
+| bash
+source ~/.bashrc
+nvm install 20
+nvm use 20
+
 # --- End of Node.js installation --
 
 
