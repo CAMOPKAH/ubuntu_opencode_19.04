@@ -210,6 +210,8 @@ command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
+
+command+=" node --version"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
